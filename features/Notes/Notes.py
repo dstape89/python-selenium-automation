@@ -47,4 +47,28 @@ best paths to use: xpath, css selectors, id
 
 $x("//div[@CLASS='help-content']/h1")
     - / at the end links to a direct child. If you go down multiple children, you use //
+
+CSS Selectors Notes
+
+CSS Selectors are string patterns used to identify an element based on a combination of HTML tag, id, class and attributes.
+$$()
+Syntax:
+tag#id
+tag.class
+tag[attribute=value]
+tag.class[attribute=value]
+tag1 tag2.class - tag2 with a class is inside tag1
+
+$$('input#twotabsearchtextbox.nav-input.nav-progressive-attribute') - use periods to separate multiple classes
+
+$$("div.help-content h1") Search all children
+$$("div.help-content > h1") Search immediate child
+
+CSS selector does not allow you to link to text. You must use XPath for text
+CSS selector does not allow you to link to parent element using the child element
+
+Read about contains for XPath
+
+Contains for CSS Selector:
+$$("a[href*='xxx_xx_xx_x']")
 """
