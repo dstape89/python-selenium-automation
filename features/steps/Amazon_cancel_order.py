@@ -5,8 +5,8 @@ from behave import given, when, then
 
 driver = webdriver.Chrome()
 
-@given('Open Amazon page')
-def open_amazon(context):
+@given('Open Amazon order page')
+def open_amazon_order(context):
     context.driver.get('https://www.amazon.com/gp/help/customer/display.html')
     driver.implicitly_wait(4)
 

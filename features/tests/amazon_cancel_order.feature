@@ -2,7 +2,7 @@
 
   Feature: Amazon Cancel Order
 
-  Scenario: User can search for a product
-    Given Open Amazon page
+  Scenario: User can cancel an order
+    Given Open Amazon order page
     When Enter search text
     Then Confirm text
